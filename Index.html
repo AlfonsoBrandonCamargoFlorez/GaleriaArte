@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Galería de arte moderno con colecciones destacadas, exposiciones virtuales y experiencias interactivas.">
+    <title>Galería de Arte Moderno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Galería de Arte Moderno</div>
+            <ul class="nav-links">
+                <li><a href="#exposiciones">Colecciones</a></li>
+                <li><a href="#colecciones">Exposiciones</a></li>
+
+
+                <!-- <li><a href="#noticias">Noticias</a></li> -->
+                <li><a href="#plan-your-visit">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button> <!-- Menú Toggle -->
+
+            <div class="mobile-menu">
+                <button class="close-btn" onclick="toggleMenu()">&#10006;</button> <!-- Cerrar Menú -->
+                <ul class="mobile-nav-links">
+                    <li><a href="#exposiciones">Colecciones</a></li>
+
+                    <li><a href="#colecciones">Exposiciones</a></li>
+
+                    <!-- <li><a href="#noticias">Noticias</a></li> -->
+                    <li><a href="#plan-your-visit">Contacto</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Página de Inicio -->
+        <section id="exposiciones">
+            <div class="hero">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <div class="carousel-slide">
+                            <img src="Img/dobby.jpg" alt="Imagen 1">
+                            <div class="carousel-text">
+                                <h2>Título 1</h2>
+                                <p>Descripción breve para la imagen 1.</p>
+                                <div class="carousel-buttons">
+                                    <a href="mas-informacion.html" class="btn info-btn">Más Información</a>
+                                    <a href="#" class="btn share-btn">Compartir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Img/dobby.jpg" alt="Imagen 2">
+                            <div class="carousel-text">
+                                <h2>Título 2</h2>
+                                <p>Descripción breve para la imagen 2.</p>
+                                <div class="carousel-buttons">
+                                    <a href="mas-informacion.html" class="btn info-btn">Más Información</a>
+                                    <a href="#" class="btn share-btn">Compartir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Img/dobby.jpg" alt="Imagen 3">
+                            <div class="carousel-text">
+                                <h2>Título 3</h2>
+                                <p>Descripción breve para la imagen 3.</p>
+                                <div class="carousel-buttons">
+                                    <a href="mas-informacion.html" class="btn info-btn">Más Información</a>
+                                    <a href="#" class="btn share-btn">Compartir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="destacados">
+                <section id="colecciones" class="destacados">
+                    <h2>Galeria</h2>
+                    <div class="colecciones">
+                        <!-- Tarjetas de Colección  -->
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/MonaLisa.jpg" alt="Colección 1">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Mona Lisa</h3>
+                                    <p>Retrato de mujer enigmática con una famosa sonrisa misteriosa.
+                                        Autor: Leonardo da Vinci</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/LasMeninas.jpg" alt="Colección 2">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Las Meninas</h3>
+                                    <p>Escena de la corte española con compleja perspectiva y autorespeculación.
+                                        Autor: Diego Velázquez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/La Dama de la Perla.jpg" alt="Colección 3">
+                                </div>
+                                <div class="card-back">
+                                    <h3>La Dama de la Perla </h3>
+                                    <p>Retrato de joven con pendiente de perla, famoso por su misterio.
+                                        Autor: Johannes Vermeer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/La Noche Estrellada.jpg" alt="Colección 4">
+                                </div>
+                                <div class="card-back">
+                                    <h3>La Noche Estrellada</h3>
+                                    <p>Paisaje nocturno vibrante con estrellas y un cielo turbulento.
+                                        Autor: Vincent van Gogh.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/El Matrimonio Arnolfini.jpg" alt="Colección 5">
+                                </div>
+                                <div class="card-back">
+                                    <h3>El Matrimonio Arnolfini</h3>
+                                    <p>Retrato de una pareja con simbolismo detallado en un entorno doméstico.
+                                        Autor: Jan van Eyck</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/Impresión, Sol Naciente .jpg" alt="Colección 6">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Impresión, Sol Naciente</h3>
+                                    <p>Pintura que da nombre al impresionismo, mostrando un amanecer en el puerto.
+                                        Autor: Claude Monet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/BlueHarry.jpg" alt="Colección 7">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 7</h3>
+                                    <p>Descripción de la colección 7.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/CoffeHarry.jpg" alt="Colección 8">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 8</h3>
+                                    <p>Descripción de la colección 8.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/Harry.jpg" alt="Colección 9">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 9</h3>
+                                    <p>Descripción de la colección 9.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/BlueHarry.jpg" alt="Colección 10">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 10</h3>
+                                    <p>Descripción de la colección 10.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/CoffeHarry.jpg" alt="Colección 11">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 11</h3>
+                                    <p>Descripción de la colección 11.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/Harry.jpg" alt="Colección 12">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 12</h3>
+                                    <p>Descripción de la colección 12.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/BlueHarry.jpg" alt="Colección 13">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 13</h3>
+                                    <p>Descripción de la colección 13.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/CoffeHarry.jpg" alt="Colección 14">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 14</h3>
+                                    <p>Descripción de la colección 14.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/Harry.jpg" alt="Colección 15">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 15</h3>
+                                    <p>Descripción de la colección 15.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/BlueHarry.jpg" alt="Colección 16">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 16</h3>
+                                    <p>Descripción de la colección 16.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/CoffeHarry.jpg" alt="Colección 17">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 17</h3>
+                                    <p>Descripción de la colección 17.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/Harry.jpg" alt="Colección 18">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 18</h3>
+                                    <p>Descripción de la colección 18.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/BlueHarry.jpg" alt="Colección 19">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 19</h3>
+                                    <p>Descripción de la colección 19.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coleccion-item">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img src="Img/CoffeHarry.jpg" alt="Colección 20">
+                                </div>
+                                <div class="card-back">
+                                    <h3>Colección 20</h3>
+                                    <p>Descripción de la colección 20.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- Aquí sigue el resto del contenido como exposiciones y noticias -->
+        </section>
+        <section id="plan-your-visit">
+            <h2>Plan Your Visit</h2>
+            <div class="visit-info">
+                <div class="visit-item">
+                    <h3>Opening Hours</h3>
+                    <p>Tuesday - Sunday: 10am - 5pm</p>
+                    <p>Closed on Mondays</p>
+                </div>
+                <div class="visit-item">
+                    <h3>Location</h3>
+                    <p>123 Art Street</p>
+                    <p>Cityville, State 12345</p>
+                </div>
+                <div class="visit-item">
+                    <h3>Current Exhibition</h3>
+                    <p>"Modern Masters"</p>
+                    <p>Until September 30, 2023</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Galería de Arte Moderno. Todos los derechos reservados.</p>
+        <ul class="footer-links">
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
